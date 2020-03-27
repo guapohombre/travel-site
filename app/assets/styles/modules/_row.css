@@ -1,0 +1,124 @@
+.row {
+
+  @mixin clearfix;
+
+  &__medium-4 {
+    text-align: center;
+  }
+
+  &__b-margin-until-medium {
+    margin-bottom: 1rem;
+  }
+
+
+  @mixin atMedium {
+
+    &__b-margin-until-medium {
+      margin-bottom: 0;
+    }
+
+    &--gutters {
+      margin-right: -65px;
+    }
+
+    &--gutters > div {
+      padding-right: 65px;
+
+    }
+
+    &__medium-4 {
+      float: left;
+      width: 33.33%;
+    }
+
+    &__medium-4--larger {
+      width: 37%;
+    }
+
+    &__medium-8 {
+      float: left;
+      width: 66.66%
+    }
+
+    &__medium-8--smaller {
+      width: 63%;
+    }
+
+
+  }
+
+
+}
+
+/* .row-flex {
+
+  @mixin atMedium {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__4 {
+      flex-basis: 38%;
+    }
+
+    &__8 {
+      flex-basis: 58%;
+    }
+
+
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.myimage {
+  background-size: cover;
+  width: 100%;
+}
+
+
+.test {
+  display: flex;
+  flex-direction: column;
+
+
+
+  &__4 {
+    margin: 1em 0;
+    width: 100%;
+    height: 450px;
+    background-color: yellow;
+  }
+
+
+ &__8 {
+   margin: 1em 0;
+   width: 100%;
+   height: 450px;
+   background-color: green;
+ }
+
+
+    @mixin atMedium {
+      flex-direction: row;
+      max-width: 980px;
+      height: 450px;
+      margin: 20px auto;
+      justify-content: space-between;
+
+    &__4 {
+      flex-basis: 38%;
+      background-color: yellow;
+    }
+
+    &__8 {
+      flex-basis: 58%;
+      background-color: green;
+    }
+  }
+
+
+
+} */
