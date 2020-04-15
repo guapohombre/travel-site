@@ -3,9 +3,11 @@
 .btn {
   background-color: $mainBlue;
   color: #FFF;
-  padding: .75em 1.2em;
+  padding: .75em 1.5em;
+  /* margin-right: 1em; */
   text-decoration: none;
   display: inline-block;
+  text-align: center;
 
   &--orange {
     background-color: $mainOrange;
