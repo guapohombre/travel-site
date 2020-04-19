@@ -10,9 +10,14 @@
   }
 
   @mixin atMedium {
+     position: fixed;
       background-color: rgba($mainBlue,.3);
       /* display: flex; */
       /* justify-content: flex-end; */
+
+      &--dark {
+        background-color: rgba(23,51,72,.85);
+      }
   }
 
   &__button-container {
@@ -37,11 +42,16 @@
     left: 50%;
     transform:translateX(-50%);
     padding: 13px 29px;
+    transition: transform 300ms ease-out;
 
     @mixin atMedium {
       left: auto;
       transform:translateX(0);
       padding: 25px 36px;
+
+      .site-header--dark & {
+        transform: scale(.57) translateY(-50px);
+      }
     }
 
 
@@ -101,6 +111,45 @@
       left: 0;
       transform-origin: 0 0;
       transition: transform 500ms ease-out;
+
+      &--x {
+        transform-origin: left;
+        transform: rotate(45deg) scale(1.15);
+      }
+    }
+
+    &__middle {
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: white;
+      top: 12px;
+      left: 0;
+      transform-origin: 0 0;
+      transition: all 500ms ease-out;
+
+      &--x {
+        opacity: 0;
+        transform-origin: left;
+        width: 0%;
+      }
+    }
+
+    &__bottom {
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: white;
+      top: 24px;
+      left: 0;
+      transform-origin: 0 0;
+      transition: transform 500ms ease-out;
+
+      &--x {
+        transform-origin: left;
+        transform: rotate(-45deg) scale(1.15);
+
+      }
     }
 }
 }
