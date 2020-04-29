@@ -8,7 +8,10 @@
     /* margin-bottom: 10rem; */
   }
 
-
+  &--less-margin {
+    margin-bottom: 1.3rem;
+    margin-top: 0;
+  }
 
   &--blue {
     color: $mainBlue;
