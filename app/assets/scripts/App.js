@@ -2,6 +2,7 @@ import '../styles/styles.css';
 import MobileMenu from './modules/MobileMenu.js';
 import RevealOnScroll from './modules/Reveal_on_scroll.js';
 import StickyHeader from './modules/sticky-header.js';
+import 'lazysizes';
 // import Modal from './modules/Modal';
 
 // new Modal();
